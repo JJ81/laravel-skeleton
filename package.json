@@ -1,6 +1,7 @@
 {
   "private": true,
   "scripts": {
+    "start" : "php artisan serve --port=8090",
     "prod": "gulp --production",
     "dev": "gulp watch"
   },
