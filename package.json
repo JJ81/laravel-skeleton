@@ -1,8 +1,9 @@
 {
   "private": true,
   "scripts": {
+    "start" : "php artisan serve --port=8090",
     "prod": "gulp --production",
-    "dev": "gulp watch"
+    "dev": "gulp"
   },
   "devDependencies": {
     "bootstrap-sass": "^3.3.7",
