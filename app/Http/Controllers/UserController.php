@@ -10,16 +10,25 @@ namespace App\Http\Controllers;
 
 use Illuminate\Routing\Controller as BaseController;
 
-use App\Http\Models\User;
+use App\Http\Models\UserModel;
+use Illuminate\Support\Facades\Log;
+use Monolog\Logger;
+
 
 class UserController extends BaseController
 {
     
     public function getIndex($id = 1){
-        // 콘솔은 어떻게 찍어야 하는가??
+        Log::info('UserController ');
+        //$users = UserModel::all();
 
-        // 엘로퀀트를 이용할 경우 매개변수를 어떻게 넘기지?
-        $users = User::all();
+
+        Log::info('Showing user profile for user: ' . $id);
+        // $users = UserModel::all();
+        //$users = UserModel::query(1)->get();
+
+        $users = UserModel::where('id', $id)->get();
+        Log::info('Result: ' . $users);
 
         return view('users', compact('users','id'));
     }
