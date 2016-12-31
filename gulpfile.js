@@ -14,6 +14,13 @@ require('laravel-elixir-vue-2');
  */
 
 elixir(mix => {
-    mix.sass('app.scss')
-       .webpack('app.js');
+    mix.sass('app.scss').webpack('app.js');
+    mix.scripts([
+        'resources/assets/bower_components/jquery/dist/jquery.min.js'
+    ]);
+    mix.styles([
+
+    ]);
+    // mix.copy('./vendor/bower_components/fontawesome/fonts', 'public/fonts');
+
 });

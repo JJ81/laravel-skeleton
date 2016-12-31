@@ -1,0 +1,14 @@
+{
+  "name": "laravel-skeleton",
+  "description": "",
+  "main": "",
+  "authors": [
+    "yijaejun <yijaejun81@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/JJ81/laravel-skeleton",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}
