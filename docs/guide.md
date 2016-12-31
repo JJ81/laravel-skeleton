@@ -9,6 +9,7 @@
 
 1. 기본적인 CRUD를 배워보자
 https://scotch.io/tutorials/simple-laravel-crud-with-resource-controllers
+이 문서에 테이블을 생성하고 지우고 변경하고 테이블간의 관계를 정의하는 설명이 간략하게 제공되고 있다.
 
 2. API를 확인해보자
 https://laravel.com/api/5.3/
